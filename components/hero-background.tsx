@@ -37,7 +37,7 @@ export function HeroBackground() {
           backgroundImage:    `url('${IMAGES[idx]}')`,
           backgroundSize:     'cover',
           backgroundPosition: 'center',
-          filter:             'blur(9px)',
+          filter:             'blur(4px)',
           opacity,
           transition:         `opacity ${FADE_MS}ms ease-in-out`,
         }}
