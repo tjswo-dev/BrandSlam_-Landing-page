@@ -12,7 +12,8 @@ export const translations = {
       title2: '콘텐츠 만들 크리에이터 구합니다',
       desc: 'TikTok · Instagram · YouTube 운영 중이라면 무료로 등록하세요. 제품 협찬 → 콘텐츠 제작 → 수익 창출까지 한 번에.',
       cta1: '지금 무료로 등록하기', cta2: '성공 사례 보기',
-      campaignCta: '참여 가능한 캠페인 확인하기',
+      campaignCta: 'K-뷰티 제품 무료로 받기',
+      ctaNote: '무료 등록 · 30초면 완료',
     },
     liveCampaigns: [
       '🔥 23YEARSOLD 신제품 캠페인 진행중',
@@ -101,7 +102,8 @@ export const translations = {
       title2: 'Create content. Get paid.',
       desc: 'Running TikTok, Instagram, or YouTube? Register for free and start receiving K-Beauty brand deals — product sponsorship, content support, and revenue all in one place.',
       cta1: 'Register for Free', cta2: 'See Success Stories',
-      campaignCta: 'View Open Campaigns',
+      campaignCta: 'Get Free K-Beauty Products',
+      ctaNote: 'Free to join · Register in 30 sec',
     },
     liveCampaigns: [
       '🔥 23YEARSOLD New Product Campaign Live',
@@ -190,7 +192,8 @@ export const translations = {
       title2: 'コンテンツを作るクリエイター募集',
       desc: 'TikTok・Instagram・YouTubeで発信中なら無料で登録を。商品提供 → コンテンツ制作 → 収益化まで、まるごとサポート。',
       cta1: '無料で登録する', cta2: '成功事例を見る',
-      campaignCta: '参加可能なキャンペーンを確認する',
+      campaignCta: 'K-Beauty商品を無料でもらう',
+      ctaNote: '無料登録 · 30秒で完了',
     },
     liveCampaigns: [
       '🔥 23YEARSOLD 新商品キャンペーン進行中',

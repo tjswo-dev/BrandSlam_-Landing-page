@@ -147,15 +147,21 @@ export default function LandingPage() {
           </div>
 
           {/* CTA button with shimmer + glow */}
-          <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="mt-4 flex flex-col items-center gap-3">
             <div className="relative inline-flex">
-              <div className="absolute -inset-2 rounded-full bg-violet-500/20 blur-lg animate-pulse" />
+              {/* outer glow */}
+              <div className="absolute -inset-4 rounded-full bg-violet-400/30 blur-2xl animate-pulse" />
+              {/* inner glow */}
+              <div className="absolute -inset-1.5 rounded-full bg-violet-300/20 blur-md animate-pulse" style={{ animationDelay: '0.6s' }} />
               <a href="https://forms.gle/PAr9WRdky1E1jEma6" target="_blank" rel="noopener noreferrer" className="relative">
-                <Button size="lg" className="campaign-btn h-12 rounded-full bg-violet-300/90 px-7 sm:px-9 text-[14px] font-semibold text-[#0d0814] shadow-lg shadow-violet-900/30 hover:bg-violet-200">
-                  {T.hero.campaignCta} <ArrowRight className="ml-2 h-4 w-4" />
+                <Button size="lg" className="campaign-btn h-14 sm:h-16 rounded-full bg-violet-300/95 px-10 sm:px-14 text-[16px] sm:text-[18px] font-bold text-[#0d0814] shadow-2xl shadow-violet-900/40 hover:bg-violet-200 hover:scale-105 transition-transform duration-200 gap-2">
+                  <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
+                  {T.hero.campaignCta}
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
                 </Button>
               </a>
             </div>
+            <p className="text-[11px] text-gray-600 tracking-wide">{T.hero.ctaNote}</p>
           </div>
         </div>
       </section>
