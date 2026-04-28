@@ -16,10 +16,9 @@ export const translations = {
     },
     liveCampaigns: [
       '🔥 23YEARSOLD 신제품 캠페인 진행중',
-      '✨ Anua 체리블라썸 캠페인 모집중',
       '💄 KOCOSTAR 마스크팩 캠페인 오픈',
-      '🌿 celimax 세럼 캠페인 진행중',
-      '☀️ Isntree 선크림 캠페인 모집중',
+      '💋 MANIA HOLIC Cheek Patch & Sunscreen 캠페인 진행중',
+      '👁️ 아이월드 Advance Eye Cream 캠페인 모집중',
     ],
     stats: [
       { value: '30,000+', label: '활성 크리에이터' },
@@ -106,10 +105,9 @@ export const translations = {
     },
     liveCampaigns: [
       '🔥 23YEARSOLD New Product Campaign Live',
-      '✨ Anua Cherry Blossom Campaign Open',
       '💄 KOCOSTAR Mask Pack Campaign Now Live',
-      '🌿 celimax Serum Campaign Running',
-      '☀️ Isntree Sunscreen Campaign Open',
+      '💋 MANIA HOLIC Cheek Patch & Sunscreen Campaign Live',
+      '👁️ iWorld Advance Eye Cream Campaign Open',
     ],
     stats: [
       { value: '30,000+', label: 'Active Creators' },
@@ -196,10 +194,9 @@ export const translations = {
     },
     liveCampaigns: [
       '🔥 23YEARSOLD 新商品キャンペーン進行中',
-      '✨ Anua チェリーブロッサムキャンペーン募集中',
       '💄 KOCOSTAR マスクパックキャンペーンオープン',
-      '🌿 celimax セラムキャンペーン進行中',
-      '☀️ Isntree 日焼け止めキャンペーン募集中',
+      '💋 MANIA HOLIC Cheek Patch & Sunscreenキャンペーン進行中',
+      '👁️ アイワールド Advance Eye Creamキャンペーン募集中',
     ],
     stats: [
       { value: '30,000+', label: 'アクティブクリエイター' },
