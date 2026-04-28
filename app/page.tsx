@@ -28,7 +28,7 @@ const TIKTOK_IDS = [
 const LANG_LABELS: Record<Lang, string> = { ko: '한국어', en: 'English', ja: '日本語' }
 
 export default function LandingPage() {
-  const [lang, setLang] = useState<Lang>('ko')
+  const [lang, setLang] = useState<Lang>('ja')
   const T = translations[lang]
 
   const [campaignIdx, setCampaignIdx]         = useState(0)
