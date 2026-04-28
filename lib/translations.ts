@@ -12,7 +12,15 @@ export const translations = {
       title2: '글로벌 무대에 서세요',
       desc: '누적 5억 뷰를 달성한 K-Beauty 전문 플랫폼. 제품 협찬부터 수익 창출까지 한 번에 해결하세요.',
       cta1: '지금 무료로 등록하기', cta2: '성공 사례 보기',
+      campaignCta: '참여 가능한 캠페인 확인하기',
     },
+    liveCampaigns: [
+      '🔥 23YEARSOLD 신제품 캠페인 진행중',
+      '✨ Anua 체리블라썸 캠페인 모집중',
+      '💄 KOCOSTAR 마스크팩 캠페인 오픈',
+      '🌿 celimax 세럼 캠페인 진행중',
+      '☀️ Isntree 선크림 캠페인 모집중',
+    ],
     stats: [
       { value: '30,000+', label: '활성 크리에이터' },
       { value: '50+',    label: '파트너 브랜드' },
@@ -55,7 +63,7 @@ export const translations = {
       desc: '슬램 글로벌과 함께하면 K-Beauty 브랜드와 함께 성장할 수 있는 다양한 혜택을 누릴 수 있습니다.',
       items: [
         { title: '무료 K-Beauty 제품 수령',    desc: '협찬 제품을 직접 체험하고 진정성 있는 리뷰를 제작할 수 있습니다.' },
-        { title: '콘텐츠 수익 정산',             desc: '조회수·판매 실적 기반의 투명한 수익 구조로 정확하게 정산됩니다.' },
+        { title: '콘텐츠 수익 정산',             desc: '5,000뷰 달성 시 $30 기본 지급, 이후 1,000뷰당 $6 추가 지급되는 투명한 수익 구조입니다.' },
         { title: '전담 매니저 1:1 지원',         desc: '캠페인 기획부터 콘텐츠 제작까지 전담 매니저가 함께합니다.' },
         { title: '독점 신제품 체험 우선권',       desc: '출시 전 신제품을 가장 먼저 경험하고 리뷰할 수 있는 우선권을 드립니다.' },
         { title: '글로벌 브랜드 파트너십',        desc: '한국·일본 50개 이상 뷰티 브랜드와의 지속적인 장기 협업 기회를 제공합니다.' },
@@ -94,7 +102,15 @@ export const translations = {
       title2: 'on the global stage',
       desc: 'The K-Beauty platform with 500M+ cumulative views. From free product sponsorships to revenue — all in one place.',
       cta1: 'Register for Free', cta2: 'See Success Stories',
+      campaignCta: 'View Open Campaigns',
     },
+    liveCampaigns: [
+      '🔥 23YEARSOLD New Product Campaign Live',
+      '✨ Anua Cherry Blossom Campaign Open',
+      '💄 KOCOSTAR Mask Pack Campaign Now Live',
+      '🌿 celimax Serum Campaign Running',
+      '☀️ Isntree Sunscreen Campaign Open',
+    ],
     stats: [
       { value: '30,000+', label: 'Active Creators' },
       { value: '50+',    label: 'Partner Brands' },
@@ -137,7 +153,7 @@ export const translations = {
       desc: 'Joining Slam Global gives you a variety of perks to grow alongside top K-Beauty brands.',
       items: [
         { title: 'Free K-Beauty Product Samples',   desc: 'Receive sponsored products to experience and create authentic reviews.' },
-        { title: 'Content Revenue Settlement',       desc: 'Get accurately paid based on views and sales with a transparent system.' },
+        { title: 'Content Revenue Settlement',       desc: 'Earn $30 when your content hits 5,000 views, then $6 per additional 1,000 views — transparent and consistent.' },
         { title: 'Dedicated 1:1 Manager Support',   desc: 'A dedicated manager supports you from campaign planning to content creation.' },
         { title: 'Exclusive New Product Access',     desc: 'Be the first to experience and review new products before launch.' },
         { title: 'Global Brand Partnerships',        desc: 'Ongoing long-term collab opportunities with 50+ Korean & Japanese beauty brands.' },
@@ -176,7 +192,15 @@ export const translations = {
       title2: 'グローバルの舞台へ',
       desc: '累計5億再生を達成したK-Beauty専門プラットフォーム。商品提供から収益化まで、ワンストップで解決。',
       cta1: '無料で登録する', cta2: '成功事例を見る',
+      campaignCta: '参加可能なキャンペーンを確認する',
     },
+    liveCampaigns: [
+      '🔥 23YEARSOLD 新商品キャンペーン進行中',
+      '✨ Anua チェリーブロッサムキャンペーン募集中',
+      '💄 KOCOSTAR マスクパックキャンペーンオープン',
+      '🌿 celimax セラムキャンペーン進行中',
+      '☀️ Isntree 日焼け止めキャンペーン募集中',
+    ],
     stats: [
       { value: '30,000+', label: 'アクティブクリエイター' },
       { value: '50+',    label: 'パートナーブランド' },
@@ -219,7 +243,7 @@ export const translations = {
       desc: 'Slam Globalに参加すると、K-Beautyブランドと共に成長できる様々な特典をご活用いただけます。',
       items: [
         { title: '無料K-Beauty商品の受け取り',      desc: '提供商品を実際に体験し、誠実なレビューを制作できます。' },
-        { title: 'コンテンツ収益の精算',             desc: '再生数・販売実績に基づく透明な収益構造で正確に精算されます。' },
+        { title: 'コンテンツ収益の精算',             desc: '5,000再生達成で$30を基本支給、以降1,000再生ごとに$6追加支給される透明な収益構造です。' },
         { title: '専任マネージャーの1:1サポート',    desc: 'キャンペーン企画からコンテンツ制作まで専任マネージャーがサポートします。' },
         { title: '新商品優先体験権',                 desc: '発売前の新商品をいち早く体験・レビューできる優先権をご提供します。' },
         { title: 'グローバルブランドパートナーシップ',desc: '韓国・日本50社以上のビューティーブランドとの長期コラボ機会を提供します。' },

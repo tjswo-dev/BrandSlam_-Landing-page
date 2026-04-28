@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import {
   ArrowRight, Globe, Sparkles, Star, Headphones,
@@ -18,6 +18,7 @@ const PARTNER_BRANDS = [
 
 const BENEFIT_ICONS = [Package, DollarSign, Headphones, Star, Globe, BarChart2, Award, Network]
 
+
 const TIKTOK_IDS = [
   { id: '7471724419216346398', handle: '@milkydew' },
   { id: '7530013023667309879', handle: '@karlaceliss' },
@@ -29,6 +30,25 @@ const LANG_LABELS: Record<Lang, string> = { ko: '한국어', en: 'English', ja: 
 export default function LandingPage() {
   const [lang, setLang] = useState<Lang>('ko')
   const T = translations[lang]
+
+  const [campaignIdx, setCampaignIdx]         = useState(0)
+  const [campaignVisible, setCampaignVisible] = useState(true)
+
+  useEffect(() => {
+    setCampaignIdx(0)
+    setCampaignVisible(true)
+  }, [lang])
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCampaignVisible(false)
+      setTimeout(() => {
+        setCampaignIdx(i => (i + 1) % T.liveCampaigns.length)
+        setCampaignVisible(true)
+      }, 380)
+    }, 2800)
+    return () => clearInterval(id)
+  }, [T.liveCampaigns.length])
 
   return (
     <div className="min-h-screen bg-[#0d0a14]">
@@ -84,7 +104,7 @@ export default function LandingPage() {
       </div>
 
       {/* ── Hero ── */}
-      <section className="relative z-10 pt-40 pb-24 md:pt-44 md:pb-32">
+      <section className="relative z-10 pt-40 pb-32 md:pt-44 md:pb-40">
         <div className="absolute inset-0 overflow-hidden">
           <HeroBackground />
         </div>
@@ -107,12 +127,36 @@ export default function LandingPage() {
             {T.hero.desc}
           </p>
 
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="https://forms.gle/PAr9WRdky1E1jEma6" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="h-12 rounded-full bg-violet-300/90 px-7 sm:px-9 text-[14px] font-semibold text-[#0d0814] shadow-lg shadow-violet-900/20 hover:bg-violet-200">
-                참여 가능한 캠페인 확인하기 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </a>
+          {/* Live campaign ticker */}
+          <div className="mt-8 flex justify-center">
+            <div
+              className="inline-flex items-center gap-2.5 rounded-full border border-emerald-400/25 bg-emerald-950/30 px-4 py-2"
+              style={{
+                opacity:    campaignVisible ? 1 : 0,
+                transform:  campaignVisible ? 'translateY(0px)' : 'translateY(5px)',
+                transition: 'opacity 0.35s ease, transform 0.35s ease',
+              }}
+            >
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+              </span>
+              <span className="text-[12px] font-medium text-emerald-300/85">
+                {T.liveCampaigns[campaignIdx]}
+              </span>
+            </div>
+          </div>
+
+          {/* CTA button with shimmer + glow */}
+          <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="relative inline-flex">
+              <div className="absolute -inset-2 rounded-full bg-violet-500/20 blur-lg animate-pulse" />
+              <a href="https://forms.gle/PAr9WRdky1E1jEma6" target="_blank" rel="noopener noreferrer" className="relative">
+                <Button size="lg" className="campaign-btn h-12 rounded-full bg-violet-300/90 px-7 sm:px-9 text-[14px] font-semibold text-[#0d0814] shadow-lg shadow-violet-900/30 hover:bg-violet-200">
+                  {T.hero.campaignCta} <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -124,6 +124,27 @@
   }
 }
 
+@keyframes shimmer-sweep {
+  0%   { transform: translateX(-120%) skewX(-18deg); }
+  100% { transform: translateX(320%)  skewX(-18deg); }
+}
+
+.campaign-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.campaign-btn::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.30), transparent);
+  animation: shimmer-sweep 2.4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
 @keyframes heroImageCycle {
   0%   { opacity: 0; }
   6%   { opacity: 0.5; }
