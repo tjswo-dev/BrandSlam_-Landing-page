@@ -115,10 +115,9 @@ export default function LandingPage() {
             <span className="text-[11px] font-semibold tracking-[0.18em] text-violet-300/70 uppercase">{T.hero.badge}</span>
           </div>
 
-          <h1 className="mx-auto max-w-3xl text-[36px] font-bold leading-[1.15] tracking-tight text-white sm:text-5xl md:text-[68px] md:leading-[1.12]">
-            {T.hero.title1}
-            <br />
-            <span className="bg-gradient-to-r from-violet-300 via-violet-200 to-white/80 bg-clip-text text-transparent">
+          <h1 className="mx-auto max-w-4xl text-[32px] font-bold leading-[1.2] tracking-tight text-white sm:text-[44px] md:text-[52px] md:leading-[1.15]">
+            <span className="block md:whitespace-nowrap">{T.hero.title1}</span>
+            <span className="block md:whitespace-nowrap bg-gradient-to-r from-violet-300 via-violet-200 to-white/80 bg-clip-text text-transparent">
               {T.hero.title2}
             </span>
           </h1>
